@@ -16,7 +16,7 @@ img{
     box-shadow: 0px 0px 20px rgb(0, 0, 0);
 }
 audio{
-    width: 50%;
+    width: 89%;
     border:none;
     border-radius: none;
     margin-left: auto;
@@ -28,6 +28,43 @@ audio{
     position: absolute;
     top: 50%;
     transform: translate(0,-50%);
+    
+}
+.lo{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    left: 0;
+    top: 0;
+    background: #000;
+}
+.lod{
+    position: fixed;
+    width: 100px;
+    height: 100px;
+    z-index: 4;
+    left: 50%;
+    top: 50%;
+    margin: 0;
+    padding: 0;
+    background: #000;
+    border: 10px rgb(255, 255, 255) solid;
+    transform: translate(-50%,-50%);
+    border-radius: 100px;
+    border-top-color: blue;
+    animation: spinder 900ms infinite linear;
+}
+.del{
+    display: none;
+}
+@keyframes spinder {
+    from{
+        transform: translate(-50%,-50%) rotate(0deg);
+    }
+    100%{
+        transform: translate(-50%,-50%) rotate(360deg);
+    }
 }
 h1{
     position: absolute;
